@@ -4,7 +4,7 @@ import myService from "../comp/myService";
 const Open = () => {
   return (
     <>
-      <div className="bg-[#efeff2] pb-10">
+   <div className="bg-[#efeff2] pb-10">
         {/* NavBar_______ */}
         <div className=" flex flex-col">
           <nav className="flex items-center justify-between my-10">
@@ -287,8 +287,13 @@ const Open = () => {
           </div>
         </div>
       </div>
-      <div className="bg-fuchsia-500 w-full py-5 px-10 flex justify-between   ">
-        <svg
+      
+      <div className="bottom-bar  py-5 px-10 bg-black font-semibold text-white w-full">
+      <div className="h-full flex justify-between  bottom-bar-wrapper">
+      <div className="bottom-bar cursor-pointer active:animate-ping md:px-20 item flex flex-col text-center items-center justify-center active:font-bold">
+      <div>
+      <svg
+      className="ml-2 bg-blue-100  rounded-xl"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -307,11 +312,17 @@ const Open = () => {
             stroke-linejoin="round"
           />
         </svg>
+        <span className="items-center text-center flex justify-center ">Home</span>
+      </div>
           
+      </div>
 
-        <svg
-          width="24"
-          height="24"
+      <div className="bottom-bar active:animate-ping cursor-pointer md:px-20 item flex flex-col text-center items-center justify-center active:font-bold">
+      <div>
+      <svg
+      className="ml-2 bg-blue-100 rounded-xl"
+          width="30"
+          height="30"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -341,11 +352,19 @@ const Open = () => {
             stroke-width="1.5"
             stroke-linecap="round"
           />
-        </svg>
+        </svg>  
+        <span className="items-center text-center flex justify-center ">Invest</span>
+      </div>
+          
+      </div>
 
-        <svg
-          width="24"
-          height="24"
+
+      <div className="bottom-bar active:animate-ping md:px-20 item flex flex-col text-center items-center justify-center active:font-bold">
+      <div>
+      <svg
+        className="ml-3 bg-blue-100 rounded-xl cursor-pointer duration-0"
+          width="30"
+          height="30"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -361,8 +380,16 @@ const Open = () => {
             stroke="#141B34"
             stroke-width="1.5"
           />
-        </svg>
+        </svg> 
+        <span className="items-center text-center flex justify-center ">Setting</span>
       </div>
+          
+      </div>
+          
+      </div>
+          
+      </div>
+
     </>
   );
 };
